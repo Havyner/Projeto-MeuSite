@@ -1,3 +1,11 @@
+/* Estilos globais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*cores do projeto*/
 :root {
     --azul-principal: #0866F5;
     --azul-escuro: #0754CC;
@@ -10,17 +18,53 @@
     --cinza-claro: #E5E7EB;
 }
 
-
+/*corpo da página*/
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color: var(--texto-principal);
     font-family: 'Roboto', sans-serif;
     background-color: var(--branco);
 }
 
+main {
+    padding-top: 100px;
+}
+
 .header {
     background-color: var(--azul-marinho);
-    padding: 20px;
-    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+.logo-meu {
+    color: var(--branco);
+}
+
+.logo-site {
+    color: var(--azul-principal);
+}
+
+.menu ul {
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin-right: 30px;
+    display: flex;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 22px;
 }
