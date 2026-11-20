@@ -1,7 +1,26 @@
+:root {
+    --azul-principal: #0866F5;
+    --azul-escuro: #0754CC;
+    --azul-marinho: #192438;
+    --azul-claro: #EAF0FC;
+
+    --branco: #FFFFFF;
+    --texto-principal: #172238;
+    --texto-secundario: #29364F;
+    --cinza-claro: #E5E7EB;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f8ff;
+    background-color: var(--branco);
+}
+
+.header {
+    background-color: var(--azul-marinho);
+    padding: 20px;
+    text-align: center;
 }
