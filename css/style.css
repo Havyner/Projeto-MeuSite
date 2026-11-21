@@ -45,7 +45,7 @@ main {
 .header h1 {
     font-weight: bold;
     margin-left: 30px;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .logo-meu {
@@ -136,4 +136,36 @@ main {
     font-size: 22px;
     max-width: 300px;
     margin: 0 auto;
+}
+
+/*Rodapé*/
+
+.footer {
+    background-color: var(--azul-marinho);
+    color: var(--branco);
+    padding: 50px 100px;
+    display: flex;
+}
+
+.footer-text h2 {
+    font-size: 40px;
+}
+
+.footer-text p {
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    margin-left: 1350px;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.footer-final {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 20px;
 }
