@@ -29,6 +29,7 @@ main {
     padding-top: 100px;
 }
 
+/*Cabeçalho*/
 .header {
     background-color: var(--azul-marinho);
     padding: 20px 30px;
@@ -91,6 +92,7 @@ main {
     font-size: 100px;
 }
 
+/*Hero*/
 .hero p {
     font-size: 41px;
     margin-top: 20px;
@@ -112,4 +114,26 @@ main {
     margin-right: 0;
     width: 500;
     height: auto;
+}
+
+/*benefícios*/
+.beneficios {
+    background-color: var(--azul-claro);
+    color: var(--texto-principal);
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.beneficios p {
+    font-size: 22px;
+    max-width: 300px;
+    margin: 0 auto;
 }
