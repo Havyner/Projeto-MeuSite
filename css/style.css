@@ -68,3 +68,48 @@ main {
     text-decoration: none;
     font-size: 22px;
 }
+
+.hero {
+    padding: 50px 30px;
+    display:flex;
+    align-items: center;
+    gap: 200px;
+    margin-left: 50px;
+}
+
+.texto-hero {
+    max-width: 900px;
+}
+
+.texto-destaque {
+    color: var(--texto-principal);
+    font-size: 90px;
+}
+
+.texto-secundario {
+    color: var(--azul-principal);
+    font-size: 100px;
+}
+
+.hero p {
+    font-size: 41px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    border: none;
+    padding: 25px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.imagem-hero {
+    max-width: 500px;
+    margin-right: 0;
+    width: 500;
+    height: auto;
+}
