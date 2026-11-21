@@ -1,3 +1,9 @@
+/*importanto css de estilos por seções*/
+@import url("css/sobre.css");
+@import url("css/contato.css");
+@import url("css/contato.css");
+
+
 /* Estilos globais */
 *{
     margin: 0;

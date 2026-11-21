@@ -1,17 +1,36 @@
-const botaoMenu = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+async function carregarComponentes() {
 
-botaoMenu.addEventListener('click', function() {
+    const respostaHeader = await fetch('./components/header.html');
+    const respostaFooter = await fetch('./components/footer.html');
 
-    menu.classList.toggle('ativo');
+    const header = await respostaHeader.text();
+    const footer = await respostaFooter.text();
 
-    const menuAberto = menu.classList.contains('ativo');
+    document.querySelector('#header').innerHTML = header;
+    document.querySelector('#footer').innerHTML = footer;
 
-    botaoMenu.setAttribute('aria-expanded', menuAberto);
+    configurarMenu();
+}
 
-    botaoMenu.setAttribute(
-        'aria-label',
-        menuAberto ? 'Fechar menu' : 'Abrir menu'
-    );
+function configurarMenu() {
 
-});
+    const botaoMenu = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    botaoMenu.addEventListener('click', function() {
+
+        menu.classList.toggle('ativo');
+
+        const menuAberto = menu.classList.contains('ativo');
+
+        botaoMenu.setAttribute('aria-expanded', menuAberto);
+
+        botaoMenu.setAttribute(
+            'aria-label',
+            menuAberto ? 'Fechar menu' : 'Abrir menu'
+        );
+
+    });
+}
+
+carregarComponentes();
