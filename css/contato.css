@@ -1,0 +1,136 @@
+
+main {
+    padding-bottom: 60px;
+    margin-top: 100px;
+    padding-left: 80px;
+    color: var(--texto-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.contato-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* Título */
+.contato-container h1 {
+    font-size: 45px;
+    color: var(--azul-marinho);
+    margin-bottom: 15px;
+}
+
+/* Texto introdutório */
+.contato-container p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: var(--texto-principal);
+}
+
+/* Formulário */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+/* Labels */
+.contato-form label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--azul-marinho);
+}
+
+/* Campos de entrada */
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    font-family: inherit;
+    color: var(--texto-principal);
+    background-color: var(--branco);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Campo de mensagem */
+.contato-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Efeito ao selecionar os campos */
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border-color: var(--azul-principal);
+    box-shadow: 0 0 5px rgba(0, 100, 200, 0.2);
+}
+
+/* Botão */
+.contato-container button {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    border: none;
+    padding: 25px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito de mudança de cor */
+.contato-container button:hover {
+    background-color: var(--azul-marinho);
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    .contato-container {
+        padding: 20px;
+    }
+
+    .contato-container h1 {
+        font-size: 35px;
+    }
+
+    .contato-container button {
+        width: 100%;
+        padding: 18px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin-top: 40px;
+    }
+
+    .contato-container {
+        padding: 10px;
+    }
+
+    .contato-container h1 {
+        font-size: 30px;
+    }
+
+    .contato-container p {
+        font-size: 16px;
+    }
+}
